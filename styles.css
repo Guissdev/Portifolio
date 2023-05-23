@@ -146,6 +146,7 @@ section div button:hover {
 
 .card h5 {
     color: #ffffff;
+    padding-top: 3px;
     font-size: 24px;
 }
 
