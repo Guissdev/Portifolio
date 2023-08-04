@@ -1,4 +1,5 @@
 import './home.css'
+import Game from '../Game';
 
 const Home = () => {
     return (
@@ -13,7 +14,7 @@ const Home = () => {
 
                 <p>// seja bem vindo ao meu portifólio</p>
                 <p>// você também pode conferir meu perfil do github</p>
-                <p className='link'><span className='const-word'>const</span> <span className='github-link'>githubLink</span> = <a href='https://github.com/Guissdev' target='_blank'><span className='link-name'>"https://github.com/Guissdev"</span></a></p>
+                <p className='link'><span className='const-word'>const </span><span className='github-link'>githubLink</span> = <a href='https://github.com/Guissdev' target='_blank'><span className='link-name'>"https://github.com/Guissdev"</span></a></p>
             </div>
         </div>
     );

@@ -2,10 +2,11 @@
 
 
 body {
+  margin: 0;
+  padding: 0;
   background-color: #011627;
   margin: 0;
   font-family:'Fira Code', monospace;
   color: #607b96;
-  border: 1px solid #607b96;
 }
 

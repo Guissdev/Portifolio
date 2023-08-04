@@ -1,9 +1,13 @@
 .presentation {
+    margin: 0px;
+    border: 1px solid #607b96;
+    border-top: none;
+    border-bottom: none;
     color: #e1e1e1;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 80px 50px
+    justify-content: flex-start;
+    padding: 180px 50px 180px 180px;
 }
 
 .presentation h3 {
