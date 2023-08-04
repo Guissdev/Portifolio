@@ -1,0 +1,39 @@
+.cabecalho {
+    display: flex;
+    border: 1px solid #607b96;
+    border-radius: 4px 4px 0 0;
+    flex-wrap: wrap;
+}
+
+.cabecalho h4 {
+    margin: 0; 
+    border-right: 1px solid #607b96;
+    padding: 15px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.cabecalho h4:last-child {
+    margin-left: auto;
+    border-right: none;
+    border-left: 1px solid #607b96;
+}
+
+.cabecalho h4:hover {
+    color: #e1e1e1;
+}
+
+.cabecalho h4::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #fea55f;
+    transition: 0.3s;
+}
+
+.cabecalho h4:hover::before {
+    width: 100%;
+}
