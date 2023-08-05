@@ -25,10 +25,10 @@ const Snake = () => {
         setGameOver(true)
     }
 
-    const moveSnake = ({keyCode}) => 
+    const moveSnake = ({ keyCode }) =>
         keyCode >= 37 && keyCode <= 40 && setDir(DIRECTIONS[keyCode])
 
-    const createApple = () => 
+    const createApple = () =>
         apple.map((_, i) => Math.floor(Math.random() * (CANVAS_SIZE[i]) / SCALE))
 
     const checkCollision = (piece, snk = snake) => {
@@ -36,13 +36,13 @@ const Snake = () => {
             piece[0] * SCALE >= CANVAS_SIZE[0] ||
             piece[0] < 0 ||
             piece[1] * SCALE >= CANVAS_SIZE[1] ||
-            piece[1] < 0 
+            piece[1] < 0
         )
             return true
         for (const segment of snk) {
             if (piece[0] === segment[0] && piece[1] === segment[1]) return true
         }
-    return false
+        return false
     }
 
     const checkAppleCollision = newSnake => {
@@ -66,11 +66,11 @@ const Snake = () => {
         setSnake(snakeCopy)
     }
 
-    useEffect (() => {
+    useEffect(() => {
         const context = canvasRef.current.getContext('2d')
         context.setTransform(SCALE, 0, 0, SCALE, 0, 0)
         context.clearRect(0, 0, CANVAS_SIZE[0], CANVAS_SIZE[1])
-        context.fillStyle = 'green'
+        context.fillStyle = '#43D9AD'
         snake.forEach(([x, y]) => context.fillRect(x, y, 1, 1))
         context.fillStyle = 'lightgreen'
         context.fillRect(apple[0], apple[1], 1, 1)
@@ -79,16 +79,15 @@ const Snake = () => {
     useInterval(() => gameLoop(), speed)
 
     return (
-        <div role='button' tabIndex='0' onKeyDown={e => moveSnake(e)}>
+        <div className="game-container" role='button' tabIndex='0' onKeyDown={e => moveSnake(e)}>
             <canvas
-                style={{border: "1px solid black"}}
+                className="game-canvas"
                 ref={canvasRef}
-                width={`${CANVAS_SIZE[0]}px`}
+                width={`${CANVAS_SIZE[1]}px`}
                 height={`${CANVAS_SIZE[1]}px`}
             />
-            {gameOver && <div>GAME OVER!</div>}
-            <button onClick={startGame}>Começar o jogo</button>
-
+            {gameOver && <div className="game-over">GAME OVER!</div>}
+            <button className="start-button" onClick={startGame}>Começar o jogo</button>
         </div>
     );
 }

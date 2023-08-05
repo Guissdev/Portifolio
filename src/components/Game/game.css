@@ -1,0 +1,44 @@
+.game {
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 40px 30px;
+    position: relative;
+    overflow: visible;
+}
+
+.background-image {
+    position: absolute;
+    top: -40%; /* Move a imagem para cima, fazendo-a vazar um pouco para fora */
+    left: -40%; /* Move a imagem para a esquerda, fazendo-a vazar um pouco para fora */
+    width: 180%; /* Aumenta o tamanho da imagem para que ela vaze para fora */
+    height: 180%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.game .instructions {
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 12px;
+    width: 250px;
+    height: 200px;
+}
+
+.game .text {
+    padding-left: 15px;
+    padding-bottom: 30px;
+}
+
+.game .up-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game .arrows3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
