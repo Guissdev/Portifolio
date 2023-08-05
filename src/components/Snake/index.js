@@ -74,6 +74,7 @@ const Snake = () => {
         snake.forEach(([x, y]) => context.fillRect(x, y, 1, 1))
         context.fillStyle = 'lightgreen'
         context.fillRect(apple[0], apple[1], 1, 1)
+
     }, [snake, apple, gameOver])
 
     useInterval(() => gameLoop(), speed)

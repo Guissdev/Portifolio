@@ -5,6 +5,8 @@
     padding: 40px 30px;
     position: relative;
     overflow: visible;
+    background: rgb(2,42,75);
+    background: linear-gradient(335deg, rgba(2,42,75,0.4) 24%, rgba(67,217,173,0.29735644257703087) 100%);
 }
 
 .background-image {
@@ -17,13 +19,18 @@
     pointer-events: none;
 }
 
+.game .instructions .instruction-text{
+    color: #e1e1e1;
+}
+
 .game .instructions {
     align-items: center;
     justify-content: center;
-    border: 1px solid #000;
     border-radius: 12px;
     width: 250px;
     height: 200px;
+    background: rgb(85,85,85);
+    background: linear-gradient(335deg, rgba(85,85,85,0.4514180672268907) 100%, rgba(85,85,85,0.3337710084033614) 100%);
 }
 
 .game .text {

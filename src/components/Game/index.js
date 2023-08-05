@@ -8,8 +8,8 @@ const Game = () => {
             <Snake />
             <div className='instructions'>
                 <div className='text'>
-                    <p>// Use as teclas de</p>
-                    <p>// flechas para jogar</p>
+                    <p className='instruction-text'>// Use as teclas de</p>
+                    <p className='instruction-text'>// flechas para jogar</p>
                 </div>
                 
 
