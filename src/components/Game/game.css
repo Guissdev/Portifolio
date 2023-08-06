@@ -19,10 +19,6 @@
     pointer-events: none;
 }
 
-.game .instructions .instruction-text{
-    color: #e1e1e1;
-}
-
 .game .instructions {
     align-items: center;
     justify-content: center;
@@ -31,6 +27,10 @@
     height: 200px;
     background: rgb(85,85,85);
     background: linear-gradient(335deg, rgba(85,85,85,0.4514180672268907) 100%, rgba(85,85,85,0.3337710084033614) 100%);
+}
+
+.game .instructions .instruction-text{
+    color: #e1e1e1;
 }
 
 .game .text {

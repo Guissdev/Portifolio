@@ -1,11 +1,17 @@
 .cabecalho {
     display: flex;
-    border: 1px solid #607b96;
-    border-radius: 4px 4px 0 0;
+    border-top: 1px solid #607b96;
+    border-bottom: 1px solid #607b96;
     flex-wrap: wrap;
 }
 
-.cabecalho h4 {
+.cabecalho .name {
+    margin: 0; 
+    border-right: 1px solid #607b96;
+    padding: 15px;
+}
+
+.cabecalho .navi {
     margin: 0; 
     border-right: 1px solid #607b96;
     padding: 15px;
@@ -13,7 +19,7 @@
     transition: color 0.3s;
 }
 
-.cabecalho h4:last-child {
+.cabecalho .navi:last-child {
     margin-left: auto;
     border-right: none;
     border-left: 1px solid #607b96;
@@ -23,7 +29,7 @@
     color: #e1e1e1;
 }
 
-.cabecalho h4::before {
+.cabecalho .navi::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -34,6 +40,6 @@
     transition: 0.3s;
 }
 
-.cabecalho h4:hover::before {
+.cabecalho .navi:hover::before {
     width: 100%;
 }

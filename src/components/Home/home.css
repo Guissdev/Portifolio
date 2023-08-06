@@ -1,13 +1,10 @@
 .presentation {
     margin: 0px;
-    border: 1px solid #607b96;
-    border-top: none;
-    border-bottom: none;
     color: #e1e1e1;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 180px 50px 180px 180px;
+    padding: 160px 0 0 150px;
 }
 
 .presentation h3 {
@@ -19,13 +16,13 @@
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 100;
-    font-size: 70px;
+    font-size: 60px;
 }
 
 .presentation h2 {
     font-weight: 800;
     color: #4d5bce;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 0;
 }
 

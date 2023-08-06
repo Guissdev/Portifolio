@@ -1,0 +1,31 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.rodape {
+    display: flex;
+    border-top: 1px solid #607b96;
+    border-bottom: 1px solid #607b96;
+    flex-wrap: wrap;
+}
+
+.rodape h4 {
+    margin: 0; 
+    border-right: 1px solid #607b96;
+    padding: 15px;
+}
+
+.rodape .contatolw {
+    margin: 0; 
+    border-right: 1px solid #607b96;
+    padding: 17px;
+}
+
+.rodape h4:last-child {
+    margin-left: auto;
+    border-right: none;
+    border-left: 1px solid #607b96;
+}
