@@ -2,7 +2,6 @@
     margin: 0px;
     color: #e1e1e1;
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
     padding: 160px 0 0 150px;
 }
@@ -52,4 +51,16 @@
 
 .greeting {
     padding-right: 75px;
+}
+
+@media (max-width: 1775px) {
+    .presentation {
+        flex-direction: column; /* Altera a direção do flex para coluna */
+        align-items: center; /* Centraliza os elementos horizontalmente */
+        padding: 180px 0; /* Ajusta o espaçamento superior e inferior */
+    }
+
+    .greeting {
+        padding: 0; /* Remove o espaçamento lateral */
+    }
 }
