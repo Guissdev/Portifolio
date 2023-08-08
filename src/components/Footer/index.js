@@ -1,4 +1,4 @@
-import { BiLogoLinkedin} from 'react-icons/bi'
+import { BiLogoLinkedin } from 'react-icons/bi'
 import { FaWhatsapp } from 'react-icons/fa'
 import { AiFillGithub } from 'react-icons/ai'
 import React, { useState, useEffect } from 'react';
@@ -20,33 +20,32 @@ const Footer = () => {
                 setIsFooterVisible(scrollY >= maxScroll);
             }
         };
-        
+
         handleScroll();
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-    
+
 
     return (
         <footer>
-             <div className={isFooterVisible ? 'visible-footer' : 'hidden-footer'}>
+            <div className={isFooterVisible ? 'visible-footer' : 'hidden-footer'}>
                 <h4>encontre me:</h4>
-                
-                <BiLogoLinkedin 
-                    size={20} 
-                    className='contatolw'
-                />
-                <FaWhatsapp 
-                    size={20}
-                    className='contatolw'
-                />
-                <h4>
-                    @Guissdev
-                    <AiFillGithub 
+                    <BiLogoLinkedin
                         size={20}
-                        className='github'
+                        className='contatolw'
                     />
-                </h4>
+                    <FaWhatsapp
+                        size={20}
+                        className='contatolw'
+                    />
+                    <h4>
+                        @Guissdev
+                        <AiFillGithub
+                            size={20}
+                            className='github'
+                        />
+                    </h4>
             </div>
         </footer>
     )

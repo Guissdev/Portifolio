@@ -10,7 +10,6 @@ footer {
     border-top: 1px solid #607b96;
     border-bottom: 1px solid #607b96;
     flex-wrap: wrap;
-    animation: fadeIn 0.3s;
 }
 
 .visible-footer h4 {
@@ -30,6 +29,11 @@ footer {
     border-right: none;
     border-left: 1px solid #607b96;
 }
+
+.visible-footer :hover {
+    color: #e1e1e1;
+}
+
 
 .hidden-footer {
     display: none; /* Hide the footer */
