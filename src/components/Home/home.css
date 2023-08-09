@@ -3,7 +3,7 @@
     color: #e1e1e1;
     display: flex;
     justify-content: flex-start;
-    padding: 160px 0 0 150px;
+    padding: 160px 25px 0 100px;
 }
 
 .presentation h3 {
@@ -53,7 +53,7 @@
     padding-right: 75px;
 }
 
-@media (max-width: 1775px) {
+@media (max-width: 1275px) {
     .presentation {
         flex-direction: column; /* Altera a direção do flex para coluna */
         align-items: center; /* Centraliza os elementos horizontalmente */

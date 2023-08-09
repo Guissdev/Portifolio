@@ -11,10 +11,10 @@
 
 .background-image {
     position: absolute;
-    top: -40%; /* Move a imagem para cima, fazendo-a vazar um pouco para fora */
-    left: -40%; /* Move a imagem para a esquerda, fazendo-a vazar um pouco para fora */
-    width: 180%; /* Aumenta o tamanho da imagem para que ela vaze para fora */
-    height: 180%;
+    top: -30%; /* Move a imagem para cima, fazendo-a vazar um pouco para fora */
+    left: -30%; /* Move a imagem para a esquerda, fazendo-a vazar um pouco para fora */
+    width: 160%; /* Aumenta o tamanho da imagem para que ela vaze para fora */
+    height: 160%;
     z-index: -1;
     pointer-events: none;
 }
