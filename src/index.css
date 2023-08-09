@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
 
+
 .container {
   display: flex;
   flex-direction: column;
@@ -8,6 +9,11 @@
   background-color: #011627;
   font-family:'Fira Code', monospace;
   color: #607b96;
-  border-left: 1px solid #607b96;
-  border-right: 1px solid #607b96;
+  /*border-left: 1px solid #607b96;
+  border-right: 1px solid #607b96;*/
+  
+}
+
+.container::-webkit-scrollbar {
+  display: none;
 }

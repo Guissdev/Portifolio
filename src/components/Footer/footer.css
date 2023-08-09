@@ -7,8 +7,7 @@ footer {
 
 .visible-footer {
     display: flex;
-    border-top: 1px solid #607b96;
-    border-bottom: 1px solid #607b96;
+    border: 1px solid #607b96;
     flex-wrap: wrap;
 }
 

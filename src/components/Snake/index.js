@@ -25,8 +25,19 @@ const Snake = () => {
         setGameOver(true)
     }
 
-    const moveSnake = ({ keyCode }) =>
-        keyCode >= 37 && keyCode <= 40 && setDir(DIRECTIONS[keyCode])
+    const moveSnake = ({ keyCode }) =>{
+        if (
+            (keyCode === 38 && dir[1] === 1) || // Tecla cima (oposto a baixo)
+            (keyCode === 40 && dir[1] === -1) || // Tecla baixo (oposto a cima)
+            (keyCode === 37 && dir[0] === 1) || // Tecla esquerda (oposto a direita)
+            (keyCode === 39 && dir[0] === -1) // Tecla direita (oposto a esquerda)
+        ) {
+            return;
+        }
+
+        // Movimentar a cobra na direção adequada
+        keyCode >= 37 && keyCode <= 40 && setDir(DIRECTIONS[keyCode]);
+    };
 
     const createApple = () =>
         apple.map((_, i) => Math.floor(Math.random() * (CANVAS_SIZE[i]) / SCALE))

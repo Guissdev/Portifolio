@@ -1,8 +1,8 @@
 import './header.css';
-import React, { useState, useEffect } from 'react';
+/*import React, { useState, useEffect } from 'react';*/
 
 const Header = () => {
-    const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+    /*const [isHeaderVisible, setIsHeaderVisible] = useState(true);
 
     useEffect(() => {
 
@@ -13,10 +13,11 @@ const Header = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+    */
 
     return (
         <header>
-            <div className={isHeaderVisible ? 'visible' : 'hidden'}>
+            <div className='cabecalho'>
                 <h4 className='name'>guilherme-santos</h4>
                 <h4 className='navi'>_hello</h4>
                 <h4 className='navi'>_sobre-mim</h4>

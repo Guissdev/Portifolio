@@ -61,6 +61,7 @@
     }
 
     .greeting {
-        padding: 0; /* Remove o espaçamento lateral */
+        padding-right: 160px;/* Remove o espaçamento lateral */
+        padding-bottom: 60px; 
     }
 }
