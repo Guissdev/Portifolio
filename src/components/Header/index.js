@@ -17,14 +17,18 @@ const Header = () => {
 
     return (
         <header>
-            <div className='cabecalho'>
-                <h4 className='name'>guilherme-santos</h4>
-                <h4 className='navi'>_hello</h4>
-                <h4 className='navi'>_sobre-mim</h4>
-                <h4 className='navi'>_projetos</h4>
-                <h4 className='navi'>_contato</h4>
-            </div>
-        </header>
+            <navi className='cabecalho'>
+                <ul className='navi'>
+                    <li className='itens'>guilherme-santos</li>
+                    <li className='itens'>_hello</li>
+                    <li className='itens'>_sobre-mim</li>
+                    <li className='itens'>_projetos</li>
+                    <li className='itens'>_contato</li>
+                </ul>
+            </navi>
+        
+                
+        </header >
     )
 }
 

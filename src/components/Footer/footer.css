@@ -5,37 +5,42 @@ footer {
     justify-content: center;
 }
 
-.visible-footer {
+.rodape .visible-footer {
+    padding: 0;
+    margin: 0;
     display: flex;
     border: 1px solid #607b96;
     flex-wrap: wrap;
+    list-style: none;
+    
 }
 
-.visible-footer h4 {
-    margin: 0; 
+.rodape .itens {
+    margin: 0;
     border-right: 1px solid #607b96;
-    padding: 15px;
 }
 
-.visible-footer .contatolw {
-    margin: 0; 
-    border-right: 1px solid #607b96;
-    padding: 17px;
+.rodape .contatol {
+    margin: 0;
 }
 
-.visible-footer h4:last-child {
+.rodape .contatow {
+    margin: 0;
+}
+
+.rodape .itens:last-child {
     margin-left: auto;
     border-right: none;
     border-left: 1px solid #607b96;
 }
 
-.visible-footer :hover {
+.rodape .itens:hover {
     color: #e1e1e1;
 }
 
-
-.hidden-footer {
-    display: none; /* Hide the footer */
+.rodape .hidden-footer {
+    display: none;
+    /* Hide the footer */
     border-top: 1px solid #607b96;
     border-bottom: 1px solid #607b96;
     flex-wrap: wrap;

@@ -29,24 +29,32 @@ const Footer = () => {
 
     return (
         <footer>
-            <div className={isFooterVisible ? 'visible-footer' : 'hidden-footer'}>
-                <h4>encontre me:</h4>
-                    <BiLogoLinkedin
-                        size={20}
-                        className='contatolw'
-                    />
-                    <FaWhatsapp
-                        size={20}
-                        className='contatolw'
-                    />
-                    <h4>
+            <navi className='rodape'>
+                <ul className={isFooterVisible ? 'visible-footer' : 'hidden-footer'}>
+                    <li className="itens">
+                        encontre me:
+                    </li>
+                    <li className='itens'>
+                        <BiLogoLinkedin
+                            size={20}
+                            className='contatol'
+                        />
+                    </li>
+                    <li className='itens'>
+                        <FaWhatsapp
+                            size={20}
+                            className='contatow'
+                        />
+                    </li>
+                    <li className='itens'>
                         @Guissdev
                         <AiFillGithub
                             size={20}
                             className='github'
                         />
-                    </h4>
-            </div>
+                    </li>
+                </ul>
+            </navi>
         </footer>
     )
 }

@@ -1,5 +1,11 @@
+.cabecalho .navi,
+.cabecalho .navi {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .cabecalho {
-    display: flex;
     border: 1px solid #607b96;
     position: absolute;
     top: 0;
@@ -8,13 +14,13 @@
     padding: 0;
 }
 
-.cabecalho .name {
+.navi {
+    display: flex;
     margin: 0;
     border-right: 1px solid #607b96;
-    padding: 15px;
 }
 
-.cabecalho .navi {
+.itens {
     margin: 0;
     border-right: 1px solid #607b96;
     padding: 15px;
@@ -22,17 +28,12 @@
     transition: color 0.3s;
 }
 
-.cabecalho .navi:last-child {
+.itens:last-child {
     margin-left: auto;
-    border-right: none;
     border-left: 1px solid #607b96;
 }
 
-.cabecalho h4:hover {
-    color: #e1e1e1;
-}
-
-.cabecalho .navi::before {
+.itens::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -41,37 +42,12 @@
     height: 3px;
     background-color: #fea55f;
     transition: 0.3s;
-
 }
 
-.cabecalho .navi:hover::before {
+.itens:hover {
+    color: #e1e1e1;
+}
+
+.itens:hover::after {
     width: 100%;
 }
-
-/*.hidden {
-    animation: fadeOut 0.3s;
-    pointer-events: none;
-    transform: translateY(-100%);
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-*/
