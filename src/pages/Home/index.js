@@ -1,4 +1,4 @@
-import Game from '../Game';
+import Game from '../../components/Game';
 import './home.css'
 
 const Home = () => {
